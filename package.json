@@ -5,12 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon start"
+    "start": "nodemon start"
   },
   "author": "Luciano Montero",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "normalize.css": "^8.0.1"
   }
 }
