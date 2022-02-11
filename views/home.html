@@ -24,14 +24,13 @@
   </head>
 
   <body>
-    <header class="yellow">
-      <div class="container-header">
+    <header class="container-header">
+      
         <div class="container-header-box">
-          <div class="logo">
-            <img src="/img/logo-mercado-liebre.svg" alt="Logo" />
-          </div>
-
-          <div class="search">
+       
+          <img class="header-logo" src="/img/logo-mercado-liebre.svg" alt="Logo" />
+       
+          <div class="header-search">
             <form action="#" method="get" target="_self">
               <input
                 type="search"
@@ -39,34 +38,35 @@
                 placeholder="Buscar productos,marcas "
               />
               <div>
-                <button class="btn" type="submit">
+                <button class="search-button" type="submit">
                   <i class="fas fa-search"></i>
                 </button>
               </div>
             </form>
           </div>
+          <div class="header-buy">
+            <p>
+              <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjetas de crédito
+            </p>
+          </div>
         </div>
-        <div class="text">
-          <p>
-            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin
-            tarjetas de credito
-          </p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <p>Ofertas</p>
-          <p>Tiendas Oficiales</p>
-          <p>Vender</p>
-          <p>Ayuda</p>
+       
+     
+      <nav class="header-botton-navbar">
+        <ul class="navbar-botton-left">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
         </ul>
 
-        <ul>
-          <p>Creá tu cuenta<i class="fas fa-id-card"></i></p>
-          <p>Ingresá<i class="fas fa-sign-in-alt"></i></p>
-          <p>Mis Compras<i class="fas fa-shopping-basket"></i></p>
+        <ul class="navbar-botton-right">
+          <li><a href="#">Creá tu cuenta<i class="fas fa-id-card"></i></a></li>
+            <li><a href="#">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+              <li><a href="#">Mis Compras<i class="fas fa-shopping-basket"></i></a></li>
         </ul>
       </nav>
+
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
       </div>
@@ -154,7 +154,7 @@
         </div>
       </section>
 
-      <section class="container">
+      <section class="container-offer">
         <h3 class="title">Sección de Ofertas</h3>
         <div class="container-cards">
           <article class="cards">
