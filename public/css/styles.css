@@ -7,27 +7,13 @@ body {
 }
 /*  Tamaños Tipograficos */
 
-p {
-  font-size: 12px;
-}
-h1 {
-  font-size: 36;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 27px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 16px;
-}
+p {font-size: 12px;}
+h1 {font-size: 36;}
+h2 {font-size: 30px;}
+h3 {font-size: 27px;}
+h4 {font-size: 24px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
 
 * {
   margin: 0px;
@@ -40,20 +26,22 @@ h6 {
   background-color: #eac926;
   padding: 20px;
 }
+.header-logo {
+  padding: 5px;
+  width: 50%;
+}
 .container-header-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.header-logo {
-  padding: 5px;
-  width: 50%;
-}
+
 .header-search {
   margin: 8px auto 5px;
   width: 50%;
   padding: 0px 5px;
 }
+
 .header-search form {
   display: flex;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
@@ -66,7 +54,6 @@ h6 {
   outline: none;
   border-radius: 5px 0px 0px 5px;
 }
-
 .search-button {
   height: 32px;
   background-color: #f5f5f5;
@@ -77,7 +64,7 @@ h6 {
   border-radius: 0px 5px 5px 0px;
 }
 
-/*//Actualizado: Site y el login navbar oculto .*/
+
 .header-botton-navbar {
   display: none;
 }
@@ -102,14 +89,15 @@ h6 {
   padding: 5px;
   text-align: center;
 }
-.header-buy i {
-  padding-right: 10px;
-  font-size: 20px;
-}
 .header-buy p {
   font-size: 18px;
   font-weight: 900;
 }
+.header-buy i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
 .burger-menu {
   text-align: center;
 }
@@ -131,9 +119,10 @@ h6 {
     margin: auto;
     padding: 0px 5px;
   }
+ 
 }
 @media (min-width: 768px) {
-  .container-header-box {
+.container-header-box {
     flex-wrap: nowrap;
     padding: 8px;
   }
@@ -178,7 +167,7 @@ h6 {
 
 /* //           Anotacion: INICIO DEL MAIN             */
 
-/*/Actualizado: Centrar la sección main y que ocupe un 90% del ancho de la pantalla. */
+
 .container-main {
   margin: 0 auto;
   width: 90%;
@@ -190,7 +179,7 @@ h6 {
   margin: 15px 0px;
 }
 
-/* /Actualizado: Entre cada artículo hay una separación de 10 píxeles.*/
+
 .cards {
   border-radius: 5px;
   background-color: #ffffff;
@@ -201,7 +190,7 @@ h6 {
   padding: 2px;
   width: 100%;
 }
-/* /Actualizado: tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus lados.*/
+
 .content-cards {
   width: 100%;
   display: flex;
@@ -245,7 +234,7 @@ h6 {
   color: rgb(99, 99, 104);
   padding-top: 5px;
 }
-/* / Actualizado: Navegación en tablets */
+
 @media (min-width: 361px) {
   .container-cards {
     width: 100%;
@@ -267,12 +256,13 @@ h6 {
     margin-right: 19px;
   }
 }
-/* / Actualizado: Navegación en desktop */
+
 @media (min-width: 769px) {
   .cards {
     width: 22%;
   }
 }
+
 /* //       Anotacion: FIN DEL MAIN                        */
 
 /* //Anotacion: INICIO DEL FOOTER                         */
@@ -300,3 +290,131 @@ footer section p {
   margin-bottom: 10px;
 }
 /* //           Anotacion: FIN DEL FOOTER               */
+
+
+/*//Actualizar: INICIO MAIN REGITRO y LOGIN */
+.container-users {
+  margin-top: 30px;
+  margin-bottom: 32px;
+
+}
+
+.register h5 {
+  
+  color: #4f4f4f;
+ 
+}
+.register-profile,
+.register-interests,
+.login-access{
+  padding: 16px;
+  margin:15px auto;
+  border-color: rgba(29, 27, 27, 0.322);
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+legend{
+  font-size: 22.4px;
+  color: rgba(34, 33, 33, 0.63);
+    
+}
+
+label {
+  font-weight: 600;
+  padding-bottom: 5px;
+  display: block; 
+  cursor: pointer;
+} 
+
+/* Deselecciona un elemento en espesifico para no aplicar estilos */
+ input:not([type="submit"],[type="search"],[type="radio"],[type="checkbox"])
+{    
+  padding: 16px;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="radio"],[type="checkbox"]{
+
+  margin: 5px;
+  cursor: pointer;
+ 
+}
+
+.user-profile{
+  display: flex;
+  text-align: center;
+  justify-content:space-between;
+  align-items: center;
+  padding: 15px 20px 15px
+   
+}
+.user-Interests{
+  padding: 15px 20px 15px
+}
+.container-buttons{
+  display:flex;
+  justify-content:space-evenly;
+  
+}
+p#texto{
+	text-align: center;
+	color:white;
+  
+}
+
+div#button-form,
+#button-form-login{
+	position:relative;
+	margin:10px;
+	padding:10px;
+	width:100%;
+	background-color: #2499e3;
+	border-radius:5px;
+	box-shadow:0px 3px 0px #1a71a9;
+ 
+}
+
+input#button-register,
+#button-reset,
+#button-login{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	opacity: 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+ 
+  legend{
+    font-size: 2rem;
+        
+  }
+  label {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .user-profile{
+    display:inline-flex;
+    
+   }
+  .shop-sales{
+    margin: 0px 71px 0px 0px
+  }
+  p#texto{
+    font-size: 20px;
+  }
+
+}
+
+/*//Actualizar: FIN MAIN REGITRO */
