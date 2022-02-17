@@ -309,6 +309,9 @@ font-size: small;
 padding: 10px 32px 10px;
 }
 @media (min-width: 768px) {
+  .linkService-card:hover i{
+    color: #39b54a;
+  }
   .linkService section h4 {
     display:block;
     font-size:medium;
@@ -316,7 +319,6 @@ padding: 10px 32px 10px;
   .linkService section p {
     display:block;
     font-size: small;
-  
   }
 }
 
